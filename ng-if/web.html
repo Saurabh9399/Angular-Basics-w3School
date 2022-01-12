@@ -1,0 +1,19 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+Keep HTML: <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
+
+<div ng-if="myVar">
+<h1>Welcome</h1>
+<p>Welcome to my home.</p>
+<hr>
+</div>
+
+<p>The DIV element will be removed when the checkbox is not checked.</p>
+<p>The DIV element will return, if you check the checkbox.</p>
+
+</body>
+</html>
+
+<!-- ng-if can only render data whenever the condition is true. It doesn't have any rendered data until the condition is true. ng-show can show and hide the rendered data, that is, it always kept the rendered data and show or hide on the basis of that directives. -->
