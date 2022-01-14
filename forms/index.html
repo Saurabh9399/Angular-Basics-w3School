@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <body ng-app="">
+    <form>
+      Pick a topic:
+      <input type="radio" ng-model="myVar" value="dogs" />Dogs
+      <input type="radio" ng-model="myVar" value="fishs" />Fishes
+      <input type="radio" ng-model="myVar" value="cars" />Cars
+    </form>
+
+    <div ng-switch="myVar">
+      <div ng-switch-when="dogs">
+        <h1>Dogs</h1>
+        <p>Welcome to the World of dogs.</p>
+      </div>
+      <div ng-switch-when="fishs">
+        <h1>Fishes</h1>
+        <p>Different variety of fishes are here.</p>
+      </div>
+      <div ng-switch-when="cars">
+        <h1>Cars</h1>
+        <p>Pick your Lamborgini from here.</p>
+      </div>
+    </div>
+
+    <p>
+      The ng-switch directive hides and shows HTML sections depending on the
+      value of the radio buttons.
+    </p>
+  </body>
+</html>
